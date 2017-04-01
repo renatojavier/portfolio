@@ -1,0 +1,137 @@
+/*-----------------------------------*
+ | Letter Fold (portrait two-fold)   |
+ *-----------------------------------*/
+/* 3D space container */
+#runtime-animation{
+    position: inherit;
+    margin: auto;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 20000px;
+    -moz-perspective: 20000px;
+    perspective: 20000px;
+    
+    opacity: 0;
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+    
+    z-index: 1000;
+}
+
+/*--------------*
+ | Panels       |
+ *--------------*/
+#runtime-animation > .panel{
+    position: absolute;
+    width: calc(100% / 3);
+    height: inherit;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#runtime-animation .panel .image-holder{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    overflow: hidden;
+    background: white;
+}
+
+#runtime-animation > .panel:first-child{
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    transform-origin: right center;
+    
+    z-index: 10;
+}
+
+#runtime-animation > .panel:nth-child(2){
+    left: calc(100% / 3.0);
+    
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    
+    z-index: 0;
+}
+
+#runtime-animation > .panel:last-child{
+    left: calc(100% / 1.5);
+    
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    transform-origin: left center;
+    
+    z-index: 10;
+}
+
+#runtime-animation .panel .image-holder:first-of-type{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#runtime-animation .panel:first-of-type .image-holder{
+    right:  0;
+    left: auto;
+}
+
+#runtime-animation .panel:nth-of-type(2) .image-holder,
+#runtime-animation .panel:last-of-type .image-holder{
+    left:  0;
+    right: auto;
+}
+
+#runtime-animation .panel img{
+    position: absolute;
+    display: block;
+    
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    width: auto;
+    height: auto;
+}
+
+/* end */

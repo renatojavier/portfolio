@@ -1,0 +1,18 @@
+@import '_meta';
+@import '_var';
+
+body{
+	font-family: $font_family_a;
+	@include reset();
+	@include boxSizing(border);
+}
+
+#centered{
+	@include center(xy, 0, 0);
+}
+
+
+
+
+
+

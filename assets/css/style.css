@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto";
+  position: relative;
+  padding: 0;
+  margin: 0;
+  clear: left;
+  float: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: auto;
+  margin-left: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=style.css.map */

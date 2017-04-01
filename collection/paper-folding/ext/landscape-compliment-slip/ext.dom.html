@@ -1,0 +1,29 @@
+<script>
+    paper.mod.meta.cmpSlip_cardCount = 5;
+    paper.mod.meta.cmpSlip_stackGap = 7;
+</script>
+<div id="wp-sub-card">
+    <script async defer>
+        var a = '';
+        for(var i=0; i<paper.mod.meta.cmpSlip_cardCount; i++){
+            a+='<div class="card">';
+            a+='<span class="icon"><i class="fa fa-fw fa-paper-plane"></i></span>';
+            a+='<h2>Business Name</h2>';
+            a+='<section>with compliments</section>';
+            a+='</div>';
+         }
+        $('#wp-sub-card')
+        .append(a);
+    </script>
+</div>
+
+<div id="runtime-animation">
+    <div class="panel">
+        <div id="front-face" class="image-holder">
+            <img class="ui-img" src="dist/img/1.jpg">
+        </div>
+        <div id="back-face" class="image-holder"> 
+            <img class="ui-img" src="dist/img/5.jpg">
+        </div>
+    </div><!--/.panel-->
+</div>

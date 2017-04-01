@@ -1,0 +1,236 @@
+/*-----------------------*
+ | Portrait Letterhead   |
+ *-----------------------*/
+#animation-wrapper{
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+}
+
+/* Runtime card */
+#runtime-animation{
+    position: inherit;
+    z-index: 0;
+    
+    margin: auto;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    box-shadow: -5px 8px 20px #777;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(-25deg);
+    
+    opacity: 0;
+    
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+    /**/
+}
+
+#runtime-animation > .panel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#runtime-animation .panel .image-holder{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    perspective: 2000px;
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    overflow: hidden;
+    background: white;
+}
+
+#runtime-animation .panel .image-holder:first-of-type{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#runtime-animation .panel img{
+    position: absolute;
+    display: block;
+    
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    width: auto;
+    height: auto;
+}
+
+/* Supporting cards */
+#wp-sub-card{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    
+    margin: auto;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -webkit-perspective-origin: center;
+    -moz-perspective-origin: center;
+    perspective-origin: center;
+    /*
+    -webkit-transform: rotateX(50deg) rotateY(0deg) rotateZ(-25deg);
+    -moz-transform: rotateX(50deg) rotateY(0deg) rotateZ(-25deg);*/
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(-25deg);
+    
+}
+
+#wp-sub-card .card{
+    position: absolute;
+    
+    width: 320px;
+    height: 550px;
+    
+    margin: auto;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    box-shadow: 5px 0px 20px #777;
+    background: #f2f2f2;
+    
+    padding: 20px;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wp-sub-card .card::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    background-color: teal;
+    left: 0;
+    bottom: 0;
+}
+
+#wp-sub-card .card::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    background-color: #0ACEA7;
+    right: 0;
+    bottom: 0;
+}
+
+/* heading text */
+#wp-sub-card .card h2{
+    position: absolute;
+    display: inline;
+    
+    color: #014C4C;
+    font: 17px/100% sans-serif;
+    font-weight: 300;
+    
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+#wp-sub-card .card section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    font-size: 35px;
+    text-transform: capitalize;
+    color: teal;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#wp-sub-card .card .icon{
+    position: relative;
+    display: inline-block;
+    
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 100%;
+    background-color: teal;
+    color: white;
+    font-size: 25px;
+}
+
+#wp-sub-card .card .icon::before{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border: 2px solid teal;
+    content: '';
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#wp-sub-card .card .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}

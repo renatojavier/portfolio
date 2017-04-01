@@ -11,7 +11,6 @@ window.app = {
 		init : function(){
 			this.o = new Framework7();
 			_ = Dom7;
-			this.check();
 		}
 	}
 };

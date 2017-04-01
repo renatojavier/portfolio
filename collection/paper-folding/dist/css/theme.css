@@ -1,0 +1,809 @@
+/* Bootstrap font's css */
+@import url(font.css);
+
+/* Reset on higher DOM heir */
+html,
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+    
+    clear: both;
+    float: none;
+}
+
+.usual-wrap{
+    position: inherit; /* which is relative */
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    
+    background: url(../../dist/img/background.jpg);
+    background-size: cover;
+}
+
+#animation-wrapper{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    -webkit-perspective: 4000px;
+    -moz-perspective: 4000px;
+    perspective: 4000px;
+    
+    z-index: 10;
+}
+
+#runtime-animation{
+    
+}
+
+/* animation-control */
+#animation-control{
+    position: absolute;
+    padding-left: 10px;
+    clear: both;
+    
+    opacity: 0;
+    -webkiyt-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+    
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    z-index: 20;
+}
+
+/* buttons general settings */
+#animation-control button{
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    
+    padding: 10px 0;
+    margin: 10px 3px 10px -50px;
+    
+    cursor: pointer;
+    outline: none;
+    
+    font-size: 15px;
+    font-family: 'ralewayregular', arial;
+    text-transform: uppercase;
+    color: white;
+    
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+
+/* First button [front] */
+#animation-control button:nth-of-type(1){
+    background: #000;   
+}
+/* Hover state - first button [front] */
+#animation-control button:nth-of-type(1):hover{
+    border: 3px solid #000;
+    color: #000;
+    background: transparent;   
+}
+
+/* Second button [inner] */
+#animation-control button:nth-of-type(2){
+    background: #444444;   
+}
+/* Hover state - second button [inner] */
+#animation-control button:nth-of-type(2):hover{
+    border: 3px solid #444;
+    color: #444;
+    background: transparent;   
+}
+
+/* Third button [back] */
+#animation-control button:nth-of-type(3){
+    background: #E0645C;   
+}
+/* Hover state - third button [inner] */
+#animation-control button:nth-of-type(3):hover{
+    border: 3px solid #E0645C;
+    color: #E0645C;
+    background: transparent;   
+}
+
+/* Fourth button [outer] */
+#animation-control button:nth-of-type(4){
+    background: #46b98a;   
+}
+/* Hover state - fourth button [outer] */
+#animation-control button:nth-of-type(4):hover{
+    border: 3px solid #46b98a;
+    color: #46b98a;
+    background: transparent;   
+}
+
+/* Additional controls */
+#addn-controls{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#addn-controls > *{
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 41.1406px;
+    height: 32px;
+    
+    margin: auto 0 auto 20px;
+    
+    cursor: pointer;
+    color: #444;
+    
+    font-family: arial;
+    
+    opacity: 0;
+    
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+}
+
+/* additional control labels */
+#addn-controls > * > span{
+    display: block;
+    margin-top: 5px;
+    
+    font-size: 14px;
+    text-align: center;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    opacity: 0;
+    visibility: hidden;
+}    
+
+#addn-controls > *:hover > span{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------*
+ | Optional animation configurations panel   |
+ *-------------------------------------------*
+ | This is NOT part of the animmation        |
+ | control parameter                         |
+ *-------------------------------------------*/
+
+#animation-config{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    
+    width: 350px;
+    max-width: 350px;
+    
+    font-family: 'ralewayregular', arial;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    background: rgba(0,0,0,0.0);
+    color: #444;
+    
+    z-index: 20;
+}
+
+/* Card selector */
+
+#select-ui{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    padding: 8px 10px;
+    
+    background: rgba(0,0,0,0.5);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+#select-ui > span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#card-animation-selector{
+    width: 100%;
+    padding: inherit;
+    
+    background: none;
+    
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    
+    font-family: 'ralewayregular';
+    font-size: 15px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#card-animation-selector option{
+    background: rgba(0,0,0,0.5);
+}
+ 
+/* user interface wrapper */
+#__wp-user-details{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    
+    padding: 10px 20px;
+    margin: 100px 0 0 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* input-block */
+.input-block{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    margin-top: 20px;
+}
+
+.input-block:first-of-type{
+    margin-top: 0;
+}
+
+.input-block input[type='text'],
+.input-block textarea{
+    position: inherit;
+    width: 100%;
+    padding: 10px;
+    
+    border: none;
+    background: rgba(0,0,0,0.1);
+    outline: none;
+    
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    
+    font-family: 'ralewayregular';
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.input-block textarea{
+    resize: none;
+}
+
+.input-block .label{
+    position: inherit;
+    
+    display: block;
+    padding: 5px 0;
+    
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* upload block */
+
+#upload-block{
+    background: rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+#upload-block > div{
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 50%;
+    height: auto;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#upload-prox{
+    position: inherit;
+    display: block;
+    
+    height: 50px;
+    margin: 30px 10px;
+    
+    font-family: 'ralewayregular';
+    
+    background: teal;
+    border-bottom: 3px solid rgba(0,0,0,0.4);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    border-radius: 3px;
+}
+
+#upload-prox:after{
+    content: 'Your Logo';
+    position: absolute;
+    width: 90px;
+    
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    pointer-events: none;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#upload-logo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    cursor: pointer;
+}
+
+#upload-preview{
+    margin-left: -5px;
+    border-left: 2px dashed #ccc;
+    min-height: 130px;
+    overflow: hidden;
+}
+
+.fa-shirtsinbulk:before{
+    font-size: 70px;
+}
+
+#upload-preview #wp-preview-holder{
+    position: inherit;
+    display: block;
+    
+    margin: 5px auto;
+    
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+
+#wp-preview-holder > *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#wp-preview-holder > #previewImage{
+    width: 100%;
+    height: inherit;
+    
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+/* call to action buttons */
+#wp-action-btn{
+    position: relative;
+    margin-top: 20px;
+}
+
+#wp-action-btn section{
+    position: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 50%;
+    height: 50px;
+}
+
+#wp-action-btn section button{
+    position: absolute;
+    display: block;
+    
+    top: 50%;
+    left: 50%;
+    
+    width: 90%;
+    padding: 15px 0; 
+    
+    color: white;
+    font-family: 'ralewayregular',arial;
+    font-size: 15px;
+    
+    outline: none;
+    cursor: pointer;
+    
+    border: 0 none;
+    border-bottom: 3px solid rgba(0,0,0,0.4);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    border-radius: 3px;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#wp-action-btn section button:active{
+    opacity: 0.7;
+}
+
+#btn-preview{
+    background: #2c3e50;
+}
+
+#btn-save{
+    background: #E0645C;
+}
+
+#wp-action-btn section:last-of-type{
+    margin-left: -5px;
+}
+
+/* input response / alert */
+._alert{
+    color: #be1d1d;
+    font-weight: normal;
+    font-size: 13px;
+    float: right;
+}
+
+#upload-input ._alert{
+    position: absolute;
+    display: block;
+    float: none !important;
+    
+    left: 50%;
+    bottom: 10px;
+    width: 110px;
+    
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* Demo toggler */
+#animation-config #demo-toggler{
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    cursor: pointer;
+}
+
+/* animated lines (from box) */
+#wp-box-line{
+    position: absolute;
+    
+    width: inherit;
+    height: inherit;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box-line{
+    position: absolute !important;
+    display: block;
+    background: #444;
+}
+
+#box-top-line,
+#box-bottom-line{
+    width: 100%;
+    height: 5px;
+    left: 0;
+}
+
+#box-right-line,
+#box-left-line{
+    height: 100%;
+    width: 5px;
+    top: 0;
+}
+
+#box-top-line{
+    top: 0;
+}
+
+#box-bottom-line{
+    bottom: 0;
+}
+
+#box-right-line{
+    right: 0;
+}
+
+#box-left-line{
+    left: 0;
+}
+
+/* companny div group */
+#wp-name{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+}
+
+#wp-name > #name-txt{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    
+    font: 25px/100px 'proxima_nova_rgbold', arial;
+    white-space: pre-wrap;
+    -webkit-font-smoothing: antialiased;
+    color: #aaa;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    box-sizing: border-box;
+}
+
+#hero-bg-fill{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    background: url(../img/bg-opaque-black.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* company logo */
+#wp-logo{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    
+    top: -40px;
+    left: -90px;
+    
+    -webkit-transform: scale(0.0);
+    -moz-transform: scale(0.0);
+    transform: scale(0.0);
+    
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 5px solid #1d1d24;
+    
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+/* logo sonar */
+#logo-sonar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* company message */
+#wp-msg{
+    position: absolute;
+    bottom: 0;
+    
+    white-space: pre-wrap;
+    
+    width: 100%;
+    min-height: 100px;
+    
+    padding: 10px 20px;
+    
+    color: white;
+    font: 18px/120% 'ralewayregular', arial;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wp-msg > span:first-child{
+    font-size: 45px;
+    vertical-align: middle;
+}
+
+/* company website */
+#company-website{
+    position: absolute;
+    display: block;
+    
+    width: 40%;
+    
+    font: 16px/20px 'ralewayregular', Arial;
+    
+    color: #ab9159;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    padding: 8px 0;
+    border: 3px solid #ab9159;
+}
+
+#company-website:hover{
+    background: #ab9159;
+    color: #444;
+}
+
+#company-website,
+#company-website:hover{
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+/*--------------------*
+ | Preloader          |
+ *--------------------*/
+#wp-preloader,
+#wp-preloader > div{
+    position: fixed;
+    z-index: 2000;
+    
+    margin: auto;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background: #222;
+    color: white;
+    font-family: 'ralewayregular', sans-serif;
+}
+
+#wp-preloader{
+    opacity: 0;
+    
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    visibility: hidden;
+}
+
+#wp-preloader > div{
+    min-width: 300px;
+    height: 50px;
+    text-align: center;
+    background: none;
+}
+
+#preloader-content > div{
+    margin: 15px 0;
+}
+#wp-preloader a{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
+
+/*--------------------*
+ | Modal buttons      |
+ *--------------------*/
+.wp-modal-btn{
+    display: block;
+}
+
+.modal-btn{
+    display: inline-block;
+    min-width: 180px;
+    padding: 15px 20px;
+    
+    font: 15px/100% 'ralewayregular';
+    color: white;
+    
+    border-radius: 3px;
+    border: none;
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    outline: 0 none;
+    cursor: pointer;
+}
+
+.modal-btn:first-of-type{
+    background-color: grey;
+}
+
+.modal-btn:last-of-type{
+    background-color: teal;
+}
+
+/*-------------------------*
+ | Smaller viewport skin   |
+ *-------------------------*/
+#animation-control .toggler{
+    display: none;
+    
+    position: absolute;
+    right: -45px;
+    margin-top: 10px;
+    
+    color: white;
+    cursor: pointer;
+}
+
+#animation-control .toggler > .fa{
+    text-shadow: 0 0 10px #444;
+}
+
+.sm-vp-control #animation-control .toggler{
+    display: inline-block;
+}
+
+.sm-vp-control #animation-control button{
+    display: block;
+    width: 110px;
+    padding: 7px 0;
+    font-size: 13px;
+    margin: 5px 3px;
+}
+

@@ -1,0 +1,48 @@
+@mixin reset(){
+	position: relative;
+	padding: 0;
+	margin: 0;
+	clear: left;
+	float: none;
+}
+
+@mixin center($param, $ox, $oy){
+	$ox: auto;
+	$oy: auto;
+	$x: 0%;
+	$y: 0%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: $oy;
+	margin-left: $ox;
+
+	@if $param == x {
+		$x: -50%;
+		$y: 0%;
+	}
+	@else if $param == y {
+		$x: 0%;
+		$y: -50%;
+	}
+	@else if $param == xy{
+		$x: -50%;
+		$y: -50%;
+	}
+
+	@each $prefix in webkit, moz, o{
+		-#{$prefix}-transform: translate($x, $y);
+	}
+	transform: translate($x, $y);
+}
+
+@mixin borderRadius($radius){
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin boxSizing($box){
+	-webkit-box-sizing: $box + -box;
+	box-sizing: $box + -box;
+}
