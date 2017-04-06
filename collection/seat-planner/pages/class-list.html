@@ -1,0 +1,64 @@
+<div data-page="class-list" class="page navbar-fixed toolbar-fixed">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only">
+                </a>
+                <p onClick="window.open('tel:9018236'); return false;">iSeat Plan</p>
+            </div><!--/.left-->
+
+            <div class="center"></div><!--/.center-->
+
+            <div class="right">
+                <a href="#" id="search-trigger" class="link icon-only">
+                    <i class="fa fa-fw fa-search"></i>
+                </a>
+            </div><!--/.right-->
+        </div><!--/.navbar-inner-->
+
+        <form class="searchbar">
+            <div class="searchbar-input">
+                <i id="search-off" class="ripple link icon icon-back"></i>
+                <input type="search" placeholder="Search">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+        </form>
+
+    </div><!--/.navbar-->
+
+    <div class="page-content">
+        <aside id="text-guide-wrap">
+            <p class="text-guide"> You have no class yet </p>
+        </aside>
+
+        <div class="content-block searchbar-not-found">
+            Nothing found
+        </div>
+
+        <!--
+         - Static class list
+         -->
+        <div id="class-list-wrap" class="list-block media-list list-block-search">
+            <header class="no-class-alert">No class listed</header>
+            <ul data-dom="class-list">
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="add-class-wrap" class="speed-dial">
+        <a href="#" class="floating-button">
+            <i class="icon icon-plus"></i>
+            <i class="icon icon-close"></i>
+        </a>
+        <div class="speed-dial-buttons">
+            <a href="#" data-add-class="method-form-fill" >
+                <i class="icon fa fa-fw fa-pencil"></i>
+            </a>
+            <a href="#" data-add-class="method-file-feed" >
+                <i class="icon fa fa-fw fa-download"></i>
+            </a>
+        </div>
+    </div><!--/#add-class-wrap-->
+</div>

@@ -1,0 +1,85 @@
+<svg style="width: 100%; height: 100%;" viewBox="0 0 1024 720">
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="body"
+     style="display:inline">
+    <path data-segment data-segment-alias="body" data-segment-color="orange"
+       style="fill:orange;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 665.71429,291.42857 C 562.74796,103.00756 222.17119,122.35583 171.67368,336.47933 c -7.82547,261.98325 394.62564,278.11847 494.04061,92.0921 z"
+       id="path4172"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="tail"
+     style="display:inline">
+    <path data-segment data-segment-alias="tail" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 667.71083,290.68517 c 51.15518,-76.38997 103.41672,-83.57835 170.71578,-71.72083 -24.49112,31.57572 -44.95434,69.86462 -45.45686,141.42135 -0.40309,61.82024 22.00827,97.97423 42.42641,136.37059 -53.69599,13.9727 -108.63831,8.00422 -167.68533,-63.6396 z"
+       id="path4175"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="fin"
+     style="display:inline">
+    <path data-segment data-segment-alias="fin" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 301.02546,185.6293 C 326.68173,6.5628817 529.46144,59.101756 646.49763,149.26382 625.92781,167.60822 610.78298,185.90625 598.01031,214.92373 456.05698,133.56162 380.22273,162.39798 301.02546,185.6293 Z"
+       id="path4177"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="paddle">
+    <path data-segment data-segment-alias="paddle" data-segment-color="brown"
+       style="display:inline;fill:brown;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 341.43156,543.2233 c 20.78069,118.08545 167.81158,108.05873 214.15234,59.599 -48.26743,-48.30276 -37.10779,-62.33927 -38.60988,-62.75201 -54.06789,13.12722 -117.66633,16.68347 -175.54246,3.15301 z"
+       id="path4179"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="mouth"
+     style="display:inline">
+    <path
+       style="display:inline;fill: none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 230,485 c 76.00527,19.11394 140.11094,-29.07126 137.85714,-87.14286"
+       id="path4183"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="limb"
+     style="display:inline">
+    <path data-segment data-segment-alias="limb" data-segment-color="brown"
+       style="display:inline;fill:brown;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 575.71429,366.42857 c -37.3559,-58.45778 -140.14556,-66.82159 -144.28572,0.71429 24.47124,84.87924 118.48078,45.90642 144.28572,-0.71429 z"
+       id="path4181"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+    <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="eye"
+     style="display:inline">
+    <circle data-segment data-segment-alias="eye" data-segment-color="black"
+       style="display:inline;fill:black;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4187"
+       cx="256.42856"
+       cy="337.14285"
+       r="23.571428" />
+  </g>
+</svg>

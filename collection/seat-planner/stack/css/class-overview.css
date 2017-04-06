@@ -1,0 +1,142 @@
+/*--
+ - Row and columns [outer]
+ --*/
+[data-page="class-overview"] .page-content .row{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    padding: 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'latolight';
+    overflow: hidden;
+}
+
+[data-page="class-overview"] .page-content .row .main-col{
+    position: inherit;
+    height: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*-- meta & controller column --*/
+[data-page="class-overview"] .page-content #main-col-meta-ctrl{
+    padding: 15px;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl .card{
+    margin: 0;
+    height: 100%;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl .chip{
+    padding: 0 25px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl .chip .chip-label{
+    font-size: 18px;
+    font-family: 'latolight';
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl .chip .chip-media .fa{
+    color: #0AC2D2;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl .card-content{
+    height: calc(100% - (48px * 2) );
+    overflow-y: auto;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl [data-class]:not([data-class="name"]){
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl [data-class]:not([data-class="name"]) .fa{
+    color: #0AC2D2;
+    margin-right: 7px;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl [data-class-action]{
+    width: 50%;
+    margin: 0 5px;
+    font-family: 'latoregular';
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl [data-class-action="simulate"]{
+    background-color: orange;
+    color: white;
+}
+
+[data-page="class-overview"] .page-content #main-col-meta-ctrl [data-class-action="delete"]{
+    background-color: #ccc;
+    color: white;
+    background-color: #f44336;
+}
+
+/*-- student column --*/
+[data-page="class-overview"] .page-content #main-col-student-list [data-student]{
+    opacity: 0;
+    -webkit-visibility: hidden;
+    visibility: hidden;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list [data-dom="student-list-preloader"]{
+    position: absolute;
+    margin: 30px auto;
+    left: 0;
+    right: 0;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list{
+    background-color: rgba(216,241,243,0.70);
+    padding: 0;
+    overflow-y: auto;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list .list-block{
+    margin: 0;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list ul > li.swipeout{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list .list-block .item-media+.item-inner{
+    margin-left: 0px;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list .chip{
+    background-color: transparent;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list .chip-media{
+    background-color: #4CAF50;
+}
+
+[data-page="class-overview"] .page-content #main-col-student-list [data-student-action="activity"]{
+    background-color: #607D8B;
+}
+
+/*--
+ - Export class
+ --*/
+[data-page="class-overview"] [data-class-action="export"]{
+    background-color: #008641;
+}
+
+/*--
+ - Sorting type edit button 
+ --*/
+[data-page="class-overview"] [data-class="sorting-type"] [data-update-button=sorting-type]{
+    position: absolute;
+    right: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+}

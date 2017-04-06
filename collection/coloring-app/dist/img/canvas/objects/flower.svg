@@ -1,0 +1,81 @@
+<svg style="width: 100%; height: 100%;" viewBox="0 0 1024 720">
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="petals"
+     style="display:inline">
+    <path data-segment data-segment-alias="petals" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 565.71429,259.28571 C 765.0525,266.27708 662.23367,468.87786 555,388.57143 525.08579,354.87815 521.02367,341.86656 508.57143,322.14286 549.0238,310.203 561.16613,286.34313 565.71429,259.28571 Z"
+       id="path4383"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path data-segment data-segment-alias="petals" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 432.85714,266.42857 c -233.68998,104.59527 41.52453,284.45465 75,58.57143 -34.47034,-2.16152 -63.25197,-14.75234 -75,-58.57143 z"
+       id="path4385"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path data-segment data-segment-alias="petals" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 433.57143,264.28571 c -102.28802,17.73743 -206.34479,-96.06124 -85.71429,-132.85714 50.00599,-3.40858 84.8333,33.02688 120,68.57143 -30.41609,22.61529 -33.88398,43.54632 -34.28571,64.28571 z"
+       id="path4387"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path data-segment data-segment-alias="petals" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 468.57143,200.71429 c -24.48546,-26.70238 -36.28626,-58.36832 -17.14286,-102.142861 38.78111,-85.628124 105.40452,-78.794416 125.71429,0 C 579.2003,154.49947 555.40428,174.23266 540,205.71429 c -19.50855,-10.98544 -40.63068,-18.4748 -71.42857,-5 z"
+       id="path4355"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path data-segment data-segment-alias="petals" data-segment-color="yellow"
+       style="display:inline;fill:yellow;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 540.71429,204.28571 c 13.32108,-25.19538 34.08086,-47.41527 66.42857,-65 205.91997,-40.739467 131.85474,159.19586 -44.28572,118.57143 0.64957,-15.84951 -7.56377,-33.91476 -22.14285,-53.57143 z"
+       id="path4381"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="stem"
+     style="display:inline">
+    <path data-segment data-segment-alias="stem" data-segment-color="green"
+       style="fill:green;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 511.42857,324.28571 c 1.94954,35.04431 22.60466,43.0791 9.28571,117.14287 -33.55922,181.23613 -23.42281,157.18971 -26.42857,235.71428 -10.15437,-55.59726 -18.32775,-110.47416 -7.85714,-158.57143 9.3405,-68.25068 29.35877,-125.39059 25,-194.28572 z"
+       id="path4419"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="leaves"
+     style="display:inline">
+    <path data-segment data-segment-alias="stem" data-segment-color="green"
+       style="fill:green;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 277.85714,472.85714 C 402.35892,484.96334 459.46268,561.88792 493.57143,675 437.33756,653.96029 381.98905,639.56073 322.14286,591.42857 283.67477,556.42022 276.65073,515.42253 277.85714,472.85714 Z"
+       id="path4422"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path data-segment data-segment-alias="stem" data-segment-color="green"
+       style="fill:green;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 497.14286,675 C 504.67294,563.78596 541.50738,472.54858 660,459.28571 693.99174,586.4014 570.88232,651.78034 497.14286,675 Z"
+       id="path4426"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+    
+   <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="middle"
+     style="display:inline">
+    <circle data-segment data-segment-alias="middle" data-segment-color="brown"
+       style="display:inline;fill:brown;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4228-1"
+       cx="498.57144"
+       cy="257.14285"
+       r="63.621578" />
+  </g>
+</svg>

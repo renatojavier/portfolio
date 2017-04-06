@@ -1,0 +1,83 @@
+<div data-page="class-overview" class="page navbar-fixed toolbar-fixed">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back icon-only" data-back-of="class-overview">
+                    <i class="fa fa-fw fa-arrow-left"></i>
+                </a>
+                <p>Overview</p>
+            </div><!--/.left-->
+
+            <div class="center"></div><!--/.center-->
+            <div class="right">
+                <a class="link" href="/export/demo/index.html" data-class-action="export">
+                    <i class="fa fa-fw fa-file-excel-o"></i>
+                </a>
+                <a class="link" href="#" data-class-action="activity">
+                    <i class="fa fa-fw fa-bar-chart"></i>
+                </a>
+                <a class="link" href="#" data-student-action="enlist">
+                    <i class="fa fa-fw fa-user-plus"></i>
+                </a>
+            </div><!--/.right-->
+        </div><!--/.navbar-inner-->
+
+    </div><!--/.navbar-->
+
+    <div class="page-content">
+
+        <div class="row no-gutter">
+            <div class="col-60 main-col" id="main-col-meta-ctrl">
+
+                <div class="card">
+                    <div class="card-header" id="meta-class-name">
+                        <div class="chip">
+                            <div class="chip-media"><i class="fa fa-fw fa-sitemap"></i></div>
+                            <div class="chip-label" data-class="name"></div>
+                        </div>
+                    </div><!--/#meta-class-name-->
+
+                    <div class="card-content" id="meta-class-prop">
+                        <div class="card-content-inner" data-class="schedule">
+                            <i class="fa fa-fw fa-calendar"></i>
+                            <span></span>
+                        </div>
+                        <div class="card-content-inner" data-class="sorting-type">
+                            <i class="fa fa-fw fa-random"></i>
+                            <span></span>
+                            <input type="hidden" data-field="update-sorting-type">
+                            <a href="#" data-update-button="sorting-type" class="link">edit</a>
+                        </div>
+                        <div class="card-content-inner" data-class="student-count">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="link ripple-white" data-class-action="simulate">
+                            <i class="fa fa-fw fa-sitemap"></i>&nbsp;
+                            Simulate
+                        </a>
+                        <a href="#" class="link ripple-white" data-class-action="delete">
+                            <i class="fa fa-fw fa-trash"></i>&nbsp;
+                            Drop
+                        </a>
+                    </div>
+                </div>
+
+            </div><!--/#main-col-meta-ctrl-->
+
+            <div class="col-40 main-col" id="main-col-student-list">
+                <span class="preloader preloader-gray" data-dom="student-list-preloader"></span>
+                <div class="list-block">
+                    <ul data-dom="student-list"></ul>
+                </div>
+            </div><!--/#main-col-student-list-->
+
+        </div><!--/.row-->
+
+    </div><!--/.page-content-->
+
+</div><!--/.page-->

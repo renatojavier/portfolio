@@ -1,0 +1,43 @@
+<div data-page="class-activity" class="page navbar-fixed toolbar-fixed">
+
+    <div class="toolbar tabbar toolbar-bottom">
+        <div class="toolbar-inner">
+            <a href="#tab1" class="tab-link active button-sfx">Attendance</a>
+            <a href="#tab2" class="tab-link button-sfx">Recitation</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back icon-only" data-back-of="student-create">
+                    <i class="fa fa-fw fa-arrow-left"></i>
+                </a>
+                <p>Class Activity</p>
+            </div><!--/.left-->
+
+            <div class="center"></div><!--/.center-->
+            <div class="right"><span data-dom="class-name"></span></div><!--/.right-->
+
+        </div><!--/.navbar-inner-->
+    </div><!--/.navbar-->
+
+    <div data-dom="main-wrapper" class="tabs-swipeable-wrap">
+        <div class="tabs">
+
+            <div class="tab active" id="tab1" data-dom="attendance-tab">
+                <div class="list-block media-list">
+                    <ul data-dom="attendance-container"></ul>
+                </div>
+            </div><!--/ [data-dom=attendance] -->
+
+            <div class="tab" id="tab2" data-dom="recitation-tab">
+                <div class="list-block media-list">
+                    <ul data-dom="recitation-container"></ul>
+                </div>
+            </div><!--/ [data-dom=recitation] -->
+
+        </div><!--/.tabs-->
+    </div>
+
+</div>

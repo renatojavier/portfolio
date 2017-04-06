@@ -1,0 +1,27 @@
+@import url(./theme/framework7.material.min.css);
+
+@import url(./theme/framework7.material.colors.min.css);
+
+@import url(./fonts/fonts.css);
+
+@import url(./global.css);
+
+@import url(./router.css);
+
+@import url(./index.css);
+
+@import url(./class-activity.css);
+
+@import url(./class-list.css);
+
+@import url(./class-overview.css);
+
+@import url(./class-create.css);
+
+@import url(./class-import.css);
+
+@import url(./student-create.css);
+
+@import url(./student-update.css);
+
+@import url(./simulation.css);

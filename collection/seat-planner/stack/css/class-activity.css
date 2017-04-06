@@ -1,0 +1,65 @@
+/*-- dynamic class name on navbar --*/
+[data-page="class-activity"] [data-dom="class-name"]{
+    font-family: 'latolight';
+    font-size: 15px;
+    padding-right: 16px;
+}
+
+[data-page="class-activity"] [data-dom="main-wrapper"]{
+	margin-top: 50px;
+	height: calc(100% - 50px);
+}
+
+[data-page="class-activity"] .toolbar{
+	background-color: gray;
+}
+
+[data-page="class-activity"] .tab{
+	overflow-y: auto;
+}
+
+[data-page="class-activity"] .tabs,
+[data-page="class-activity"] .toolbar{
+	font-family: 'latolight';
+}
+
+[data-page="class-activity"] [data-dom="attendance-tab"] .media-list.list-block,
+[data-page="class-activity"] [data-dom="recitation-tab"] .media-list.list-block{
+	margin-top: 0;
+}
+
+[data-page="class-activity"] [data-dom="attendance-container"],
+[data-page="class-activity"] [data-dom="recitation-container"]{
+	padding-bottom: 50px;
+	min-height: calc(100vh - 150px);
+}
+
+[data-page="class-activity"] .tabs .item-title{
+	font-family: 'latolight';
+	font-size: 15px;
+}
+
+[data-page="class-activity"] .tabs .item-subtitle{
+	color: orange;
+    font-size: 13px;
+}
+
+[data-page="class-activity"] .tabs [data-dom="recitation-no-recite"]{
+	color: #F44336;
+}
+
+[data-page="class-activity"] .tabs .item-after{
+	color: #09c;
+}
+
+[data-page="class-activity"] .tabs .item-text{
+	padding-left: 20px;
+	color: #F44336;
+	line-height: 130%;
+}
+
+[data-page="class-activity"] [data-no-record="notice"]{
+	position: relative;
+    text-align: center;
+    padding-top: 50px;
+}

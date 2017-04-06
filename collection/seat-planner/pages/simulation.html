@@ -1,0 +1,161 @@
+<div data-page="simulation" class="page navbar-fixed toolbar-fixed">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link icon-only" data-back-of="simulation">
+                    <i class="fa fa-fw fa-rotate-180 fa-sign-out"></i>
+                </a>
+                <p data-dom="class-name"></p>
+                <div data-dom="class-size">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span data-dom="class-size-data">...</span>
+                </div>
+            </div><!--/.left-->
+
+            <div class="center">
+
+            </div><!--/.center-->
+
+            <div class="right">
+                
+                <div data-dom="sub-control">
+                    
+                    <a href="#" class="link icon-only" data-sub-attendance="absent">
+                        <span data-label><i class="fa fa-fw fa-user-times"></i> Mark as absent</span>
+                    </a>
+                    
+                </div>
+
+                <a href="#" class="link icon-only" data-toggle-focus="trigger">
+                    <i class="fa fa-fw fa-clone"></i>
+                    <span data-active-control="label">Details</span>
+                    <input type="hidden" data-toggle-focus="dom">
+                </a>
+            </div><!--/.right-->
+        </div><!--/.navbar-inner-->
+
+    </div><!--/.navbar-->
+
+    <div class="page-content">
+
+        <div id="canvas-simulators">
+
+            <div data-dom="tile-container">
+                <div data-dom="tile-screen-organizer">
+                    <div data-dom="tile-inner" class="grid"></div>
+                </div>
+            </div>
+
+            <div data-dom="origin" id="origin">
+                <i class="fa fa-fw fa-user"></i>
+            </div>
+
+            <div data-dom-disp="main-wrapper">
+                <div data-dom-disp="sorting-wrapper">
+                    <div data-dom-disp="sorting-mode">
+                        <label>Mode</label>
+                        <span>...</span>
+                    </div>
+
+                    <div data-dom-disp="sorting-type">
+                        <label>Type</label>
+                        <span>...</span>
+                    </div>
+                </div>
+
+                <div data-dom-disp="addon-wrapper">
+                    <div data-dom-disp="addon-column">
+                        <label>...</label>
+                        <span>...</span>
+                    </div>
+                    <div data-dom-disp="addon-column">
+                        <label>...</label>
+                        <span>...</span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--/#canvas-simulator-->
+
+    </div><!--/.page-content-->
+
+    <div class="picker-modal" data-student-expanded="container">
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <div class="left">Expanded view</div>
+                <div class="right">
+                    <a href="#" class="link close-picker"><i class="fa fa-fw fa-check fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="picker-modal-inner">
+            <!--<span class="preloader"></span>-->
+            <div class="content-block" data-student-expanded="dynamic">
+                <div class="card">
+                    <div class="card-content" style="border-bottom: 1px solid #f7f7f7;">
+                        <div data-student-expanded="student-name" class="card-content-inner">...</div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-fw fa-bullhorn"></i></div>
+                                        <div class="item-inner">
+                                            <div data-student-expanded="attendance" class="item-title label">...</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-fw fa-tag"></i></div>
+                                        <div class="item-inner">
+                                            <div data-student-expanded="studentID" class="item-title label">...</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-fw fa-female"></i></div>
+                                        <div class="item-inner">
+                                            <div data-student-expanded="gender" class="item-title label">...</div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-recitation-input="wrapper">
+                    <div class="card-content">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content" style="padding: 0 30px;">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Recitation</div>
+                                            <div class="item-input">
+                                                <input data-recitation-input="textbox" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="item-media">
+                                            <a href="#" style="padding: 0 50px;" data-recitation-input="record" class="button button-fill color-orange">Record</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div><!--/.page-->

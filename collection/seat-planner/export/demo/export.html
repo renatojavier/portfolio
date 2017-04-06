@@ -1,0 +1,196 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script type="text/javascript" src="../../stack/js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="../../stack/js/lib/moment.min.js"></script>
+        <script type="text/javascript" src="../dist/excel-builder.compiled.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../stack/css/parser.css">
+        <style type="text/css">
+            html, body{
+                background-color: #0ac2d2;
+            }
+
+            #downloader{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-decoration: none;
+                font: 27px/100% 'latolight';
+                pointer-events: none;
+                -webkit-user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" id="downloader" download="sample.xlsx">Exporting class...</a>
+        <script>
+            document.getElementById('downloader').addEventListener('click', function(){
+                location.href = '../../';
+                return false;
+            }, false);
+
+            var klass = JSON.parse(localStorage[localStorage['--active-class']]);
+
+            var workbook = ExcelBuilder.Builder.createWorkbook();
+
+            var worksheet__CLASS = workbook.createWorksheet({ name: 'Class Details' });
+            var worksheet__STUDENT = workbook.createWorksheet({ name: 'Student Details' });
+
+            var stylesheet = workbook.getStyleSheet();
+            var header = stylesheet.createFormat({
+                font : {
+                    bold : true
+                },
+                fill : {
+                    type: 'pattern',
+                    patternType: 'solid',
+                    fgColor : 'FF92D050'
+                }
+            });
+
+            var alignmentLeft = stylesheet.createFormat({
+                alignment: {
+                    horizontal: "left"
+                }
+            });
+
+            var albumTable__CLASS = new ExcelBuilder.Table();
+            var albumTable__STUDENT = new ExcelBuilder.Table();
+
+            var data_CLASS = [
+                [
+                    { value : 'Class Name', metadata : { style : header.id } }, 
+                    { value : 'Schedule', metadata : { style : header.id } }, 
+                    { value : 'Sorting Type', metadata : { style : header.id } }, 
+                    { value : 'Number of Students', metadata : { style : header.id } },
+                    { value : 'Date exported', metadata : { style : header.id } }
+                ],
+                [ klass.meta.name, klass.meta.schedule, klass.meta.sorting.type, klass.students.length, moment(Date.now()).format('MMMM Do YYYY, ddd h:mm:ss a') ]
+            ];
+            var data_STUDENT = [
+                [
+                    { value : 'Student ID', metadata : { style : header.id } },
+                    { value : 'Name', metadata : { style : header.id } },
+                    { value : 'Gender', metadata : { style : header.id } },
+                    { value : 'Absences', metadata : { style : header.id } },
+                    { value : 'Recitation', metadata : { style : header.id } }
+                ]
+            ];
+
+            for( var s = 0; s < klass.students.length; s+=1 ){
+                var absenceTotal = 0
+                ,   points = [];
+                for( var a in klass.attendance ){
+                    for( var a_index = 0; a_index < klass.attendance[a].length; a_index+=1 ){
+                        if( klass.attendance[a][a_index] === klass.students[s].index ){
+                            absenceTotal += 1;
+                        }
+                    }   
+                }
+
+                for( var r in klass.recitation ){
+                    for( var r_index = 0; r_index < klass.recitation[r].length; r_index+=1 ){
+                        for( var rm in klass.recitation[r][r_index] ){
+                            if( rm === klass.students[s].index ){
+                                points.push( klass.recitation[r][r_index][rm] );
+                            }
+                        }
+                    }   
+                }
+
+                data_STUDENT.push([
+                    klass.students[s].meta['studentID'], 
+                    ( klass.students[s].meta.name['firstName'] + ' ' + klass.students[s].meta.name['middleName'] + ' ' + klass.students[s].meta.name['lastName'] ), 
+                    klass.students[s].meta['gender'], 
+                    { value : absenceTotal, metadata : { style : alignmentLeft.id } },
+                    ((JSON.stringify( points )).replace(/[\[\]\"]/g, '')).replace(/\,/g, ', ')
+                ]);
+            }
+
+            //-->
+            albumTable__CLASS.setReferenceRange([1, 1], [5, data_CLASS.length]);
+            albumTable__CLASS.setTableColumns([
+                'Class Name',
+                'Schedule',
+                'Sorting Type',
+                'Number of Students',
+                'Date exported'
+            ]);
+
+            //-->
+            albumTable__STUDENT.setReferenceRange([1, 1], [5, data_STUDENT.length]);
+            albumTable__STUDENT.setTableColumns([
+                'Student ID',
+                'Name',
+                'Gender',
+                'Absences',
+                'Recitation'
+            ]);
+
+            //-->
+            worksheet__CLASS.setColumns([
+                {width: 35},
+                {width: 30},
+                {width: 30},
+                {width: 20},
+                {width: 35}
+            ]);
+
+            worksheet__STUDENT.setColumns([
+                {width: 20},
+                {width: 40},
+                {width: 20},
+                {width: 20},
+                {width: 50}
+            ]);
+
+            //-->
+            worksheet__CLASS.sheetView.showGridLines = true;
+            worksheet__CLASS.setData(data_CLASS);
+            workbook.addWorksheet(worksheet__CLASS);
+
+            worksheet__CLASS.addTable(albumTable__CLASS);
+            workbook.addTable(albumTable__CLASS);
+
+            //-->
+            worksheet__STUDENT.sheetView.showGridLines = true;
+            worksheet__STUDENT.setData(data_STUDENT);
+            workbook.addWorksheet(worksheet__STUDENT);
+
+            worksheet__STUDENT.addTable(albumTable__STUDENT);
+            workbook.addTable(albumTable__STUDENT);
+
+            ExcelBuilder.Builder.createFile(workbook).then(function (data) {
+                if( 'download' in document.createElement('a') ){
+                    $("#downloader").attr({
+                        download : localStorage['--active-class'],
+                        href: "data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,"+ data
+                    });
+                    setTimeout(function(){
+                        document.getElementById('downloader').click();
+                    }, 1000);
+                }else{
+                    Downloadify.create('downloader',{
+                        filename : function(){
+                            return "sample.xlsx";
+                        },
+                        data : function(){
+                            return data;
+                        },
+                        swf: 'downloadify/media/downloadify.swf',
+                        downloadImage: 'downloadify/images/download.png',
+                        width: 100,
+                        dataType: 'base64',
+                        height: 30,
+                        transparent: true,
+                        append: false
+                    });
+                }
+            });
+        </script>
+        
+    </body>
+</html>

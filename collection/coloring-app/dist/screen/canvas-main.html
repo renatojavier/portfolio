@@ -1,0 +1,130 @@
+<section data-screen="canvas-main" data-ease-from="bottom">
+
+    <div id="navigation">
+        <div id="nav-button-home" data-navigate="home" class="nav-button">
+            <i class="fa fa-fw fa-home fa-2x button"></i>
+        </div>
+
+        <div id="nav-page-header">
+            <span id="canvas-name">---</span>
+            <span id="canvas-category">---</span>
+        </div>
+
+        <div id="nav-button-stats" data-navigate="canvas-list" class="nav-button">
+            <i class="fa fa-fw fa-list button"></i>
+        </div>
+
+    </div><!--/#navigation-->
+
+    <div id="canvas-container">
+
+        <div class="panel" id="panel-toolbar">
+            <div id="non-colour" data-palette-misc="save">
+                <div class="tool">
+                    <i class="fa fa-fw fa-save fa-2x"></i>
+                </div>
+
+                <section id="save-alert">
+                    2 segments left
+                </section>
+            </div>
+
+            <div id="non-colour" data-palette-misc="clear">
+                <div class="tool">
+                    <i class="fa fa-fw fa-eraser fa-2x"></i>
+                </div>
+            </div>
+
+            <div id="colour">
+                <div id="scroller">
+                    <div class="tool" data-palette-color="red" style="background-color: red;"></div>
+                    <div class="tool" data-palette-color="orange" style="background-color: orange;"></div>
+                    <div class="tool" data-palette-color="gold" style="background-color: gold;"></div>
+                    <div class="tool" data-palette-color="yellow" style="background-color: yellow;"></div>
+                    <div class="tool" data-palette-color="green" style="background-color: green;"></div>
+                    <div class="tool" data-palette-color="blue" style="background-color: blue;"></div>
+                    <div class="tool" data-palette-color="indigo" style="background-color: indigo;"></div>
+                    <div class="tool" data-palette-color="violet" style="background-color: violet;"></div>
+                    <div class="tool" data-palette-color="pink" style="background-color: pink;"></div>
+                    <div class="tool" data-palette-color="brown" style="background-color: brown;"></div>
+                    <div class="tool" data-palette-color="burlywood" style="background-color: burlywood;"></div>
+                    <div class="tool" data-palette-color="white" style="background-color: white;"></div>
+                    <div class="tool" data-palette-color="black" style="background-color: black;"></div>
+                </div>
+            </div>
+
+        </div><!--/#panel-toolbar-->
+
+        <div class="panel" id="panel-workarea">
+
+            <div id="canvas-pattern-wrap">
+                <section> </section>
+            </div><!--/#canvas-pattern-wrap-->
+
+            <div id="canvas-cardboard-wrap"> </div><!--/#canvas-cardboard-wrap-->
+
+        </div><!--/#panel-workarea-->
+
+    </div><!--/#canvas-container-->
+
+    <div id="splash-guide" class="modal">
+        <div class="sg-box">
+            <header>
+                This is how it goes
+            </header>
+            <section>
+                <div class="sg-pointers">
+                    <i class="fa fa-fw fa-paint-brush"></i>
+                    <p>Fill-in all segment(s) of the image from canvas while following the given pattern.</p>
+                </div>
+                <div class="sg-pointers">
+                    <i class="fa fa-fw fa-unlock"></i>
+                    <p>
+                        Every canvas level completes at least 
+                        <i class="fa fa-fw fa-star"></i>
+                        <i class="fa fa-fw fa-star-o"></i>
+                        <i class="fa fa-fw fa-star-o"></i>.
+                    </p>
+                </div>
+                <div class="sg-pointers">
+                    <i class="fa fa-fw fa-lightbulb-o"></i>
+                    <p>
+                        To get the best score, try fewer color-fill attempts whenever possible.
+                    </p>
+                </div>
+            </section>
+            <div id="dismiss-splash-guide">Let's get started</div>
+        </div><!--/.sg-box-->
+    </div><!--/#splash-guide-->
+
+    <div id="rating-overlay" class="failed-rating">
+        <div class="ro-box">
+
+            <header>Canvas <span>NOT</span> cleared!</header>
+            <section class="failed-rating-remarks">
+                It's okay, you can retry to get at least a star.
+            </section>
+            <section class="passed-rating-remarks">
+                <i class="fa fa-fw fa-star-o"></i>
+                <i class="fa fa-fw fa-star-o"></i>
+                <i class="fa fa-fw fa-star-o"></i>
+            </section>
+            <footer id="rating-overlay-control">
+                <nav>
+                    <div class="rating-button button" data-navigate="canvas-list">
+                        <i class="fa fa-fw fa-list"></i>
+                    </div>
+                    <div class="rating-button button" data-rating-control="retry">
+                        <i class="fa fa-fw fa-repeat"></i>
+                    </div>
+                    <!--
+                    <div class="rating-button button" data-rating-control="next">
+                        <i class="fa fa-fw fa-forward"></i>
+                    </div>
+                    -->
+                </nav>
+            </footer>
+        </div><!--/.ro-box-->
+    </div><!--/#rating-overlay-->
+
+</section>

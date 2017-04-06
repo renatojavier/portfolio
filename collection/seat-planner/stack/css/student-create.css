@@ -1,0 +1,72 @@
+/*-- dynamic class name on navbar --*/
+[data-page="student-create"] [data-dom="class-name"]{
+    font-family: 'latolight';
+    padding-right: 16px;
+}
+
+/*-- Student form proper --*/
+[data-page="student-create"] .student-form-inner{
+    padding: 0 70px;
+}
+
+[data-page="student-create"] .student-form-inner > ul:before{
+    display: none;
+}
+
+[data-page="student-create"] .student-form-inner > ul > li{
+    margin-bottom: 20px;
+}
+
+/*-- gender field unordered list --*/
+[data-page="student-create"] .gender-field-ul{
+    padding-left: 20px !important;
+}
+
+[data-page="student-create"] .gender-field-ul .item-inner{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/*-- gender field option label --*/
+[data-page="student-create"] .gender-field-option-label{
+    line-height: 43px;
+}
+
+/*-- save button --*/
+[data-page="student-create"] [data-create-button="list"]{
+    width: 200px;
+    margin: 0 auto;
+    background-color: #FF9800;
+    font-family: 'latolight';
+}
+
+/*-- proceed-adding-class --*/
+[data-page="student-create"] #proceed-create-student-wrap{
+    padding: 0;
+    width: 200px;
+    margin: 50px auto 0;
+}
+
+[data-page="student-create"] #proceed-create-student-wrap .item-media{
+    position: relative;
+    margin: 0;
+    width: 20px;
+    height: 48px;
+}
+
+[data-page="student-create"] #proceed-create-student-wrap .item-media .icon-form-checkbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+[data-page="student-create"] #proceed-create-student-wrap .item-inner{
+    padding: 0;
+    margin: 0;
+    line-height: 48px;
+    font-size: 12px;
+}

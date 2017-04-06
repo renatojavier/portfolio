@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="./stack/css/parser.css">
+        <title>Seat Planner</title>
+    </head>
+    <body>
+
+        <div class="panel-overlay"></div>
+        <div class="statusbar-overlay"></div>
+
+        <div class="views">
+            <div class="view main-view">
+                <div class="pages">
+
+                    <div class="page" data-page="index">
+
+                        <div class="page-content"></div><!--/.page-content-->
+
+                        <div id="preparatory-wrap">
+                            <span data-preloader="icon-spinner" class="preloader preloader-white"></span>
+
+                            <span id="app-name" data-preloader="text">
+                                <strong class="app-name-word">iSEAT</strong>
+                                <section class="app-name-word">PLAN</section>
+                            </span>
+                        </div><!--/#preparatory-wrap-->
+
+                        <div id="user-form-wrap">
+                          <div class="list-block user-form-inner">
+                            <header class="user-form-header">
+                              Just one more step
+                            </header>
+                            <ul>
+
+                              <li class="item-content user-form-anim-prop">
+                                <div class="item-inner">
+                                  <div class="item-title label">First name</div>
+                                  <div class="item-input">
+                                    <input data-user-field="fname" type="text" name="fname">
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="item-content user-form-anim-prop">
+                                <div class="item-inner">
+                                  <div class="item-title label">Last name</div>
+                                  <div class="item-input">
+                                      <input data-user-field="lname" type="text" name="lname">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+
+                            <a data-user-button="save" href="#" class="button button-fill button-raised user-form-anim-prop">
+                              Save
+                            </a>
+                          </div><!--/.list-block-->
+                        </div><!--/#user-form-wrap-->
+
+                    </div><!--/.page[data-page=index]-->
+                </div><!--/.pages-->
+            </div><!--/.main-view-->
+
+        </div><!--/.views-->
+
+        <div data-short-notification></div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="stack/js/lib/jquery.min.js"></script>
+        <script src="stack/js/lib/iscroll-zoom.js"></script>
+        <script src="stack/js/lib/packery.pkgd.min.js"></script>
+        <script type="text/javascript" data-main="base/base.master" src="base/require.min.js"></script>
+
+    </body>
+</html>

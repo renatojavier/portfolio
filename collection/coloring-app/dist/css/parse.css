@@ -1,0 +1,22 @@
+/*-- include font api and icons --*/
+@import url(fonts/fonts.css);
+
+/*-- include swiper styling classes --*/
+@import url(lib/swiper.min.css);
+
+/*-- include helper css classes or element interactions styling --*/
+@import url(helper.css);
+
+/*-- include default and site-wide styling --*/
+@import url(default.css);
+
+/*-- include canvas list screen --*/
+@import url(canvas-list.css);
+
+/*-- include canvas main screen --*/
+@import url(canvas-main.css);
+
+/*-- include index [2] screen --*/
+@import url(index.css);
+
+@import url(developers.css);

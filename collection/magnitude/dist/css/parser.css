@@ -1,0 +1,15 @@
+@import url(fonts/fonts.css);
+
+@import url(framework7.material.min.css);
+
+@import url(framework7.material.colors.min.css);
+
+@import url(global.css);
+
+@import url(startup.css);
+
+@import url(fun-facts.css);
+
+@import url(instructions.css);
+
+@import url(scenes.css);

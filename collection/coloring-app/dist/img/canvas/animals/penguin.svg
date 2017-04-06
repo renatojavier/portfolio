@@ -1,0 +1,108 @@
+<svg style="width: 100%; height: 100%;" viewBox="0 0 1024 720">
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="body-outer"
+     style="display:inline">
+    <path data-segment data-segment-alias="body-outer" data-segment-color="black"
+       style="fill:black;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 385.87827,95.725727 c -53.2027,62.629763 -27.71253,107.374773 -26.26396,157.583793 -15.27856,53.86954 -62.37692,95.80666 -96.97465,142.43151 -18.72813,10.43824 -38.19015,20.87649 -59.599,31.31473 4.01242,57.52712 113.66285,40.98687 122.22846,20.20305 -10.06461,129.85256 72.91573,178.82548 180.8173,153.54319 127.27723,21.73499 178.007,-22.54502 187.88838,-151.52288 20.50952,30.50508 144.28482,15.80058 116.16754,-25.25382 -18.31178,-8.03082 -37.71125,-12.7986 -53.53808,-28.28427 C 710.14453,344.94687 665.10631,294.55886 655.589,254.31968 665.70777,209.80043 678.5947,166.6099 623.26412,90.674965 547.49477,19.635739 436.69979,37.577801 385.87827,95.725727 Z"
+       id="path4209"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccc" />
+  </g>
+<g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="body-inner"
+     style="display:inline">
+    <path data-segment data-segment-alias="body-inner" data-segment-color="white"
+       style="fill:white;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 506.08642,147.24351 c 35.77955,-21.86002 70.64329,-27.23539 103.73548,-0.72299 33.81071,30.7582 40.20651,70.65471 9.40161,122.95145 C 683.2551,380.67508 663.6151,563.59374 513.15749,581.6091 455.54224,576.73759 409.77586,551.39984 381.76446,495.3944 354.33131,433.57824 340.78472,365.93868 395.9798,269.47197 c -22.80093,-35.50682 -36.2642,-72.88118 7.44611,-121.69025 34.22017,-30.55245 68.44034,-20.74263 102.66051,-0.53821 z"
+       id="path4235"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="beak"
+     style="display:inline">
+    <path data-segment data-segment-alias="beak" data-segment-color="orange"
+       style="display:inline;fill:orange;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 433.35544,244.21816 c 51.0623,-12.77572 105.47671,-10.35392 148.49243,1.01014 6.09209,26.77489 -35.43284,44.62158 -70.71068,63.63961 -35.4338,-17.47568 -78.29213,-31.76942 -77.78175,-64.64975 z"
+       id="path4213"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="nostrils"
+     style="display:inline">
+    <ellipse
+       style="fill: none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4215"
+       cx="488.54962"
+       cy="252.78413"
+       rx="3.8997264"
+       ry="7.7994528" />
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4215-5"
+       cx="522.24884"
+       cy="253.28923"
+       rx="3.8997264"
+       ry="7.7994528" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="left-foot"
+     style="display:inline">
+    <path data-segment data-segment-alias="left-foot" data-segment-color="orange"
+       style="fill:orange;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 373.75644,584.63956 c -29.44231,36.37438 -24.60786,52.53068 24.24366,47.47717 18.00684,29.1372 33.78898,29.69126 56.56855,2.0203 41.59093,35.96751 50.75599,-2.76991 37.37564,-29.29442 -38.92362,3.65691 -77.94112,5.24851 -118.18785,-20.20305 z"
+       id="path4241"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="right-foot"
+     style="display:inline">
+    <path data-segment data-segment-alias="right-foot" data-segment-color="orange"
+       style="fill:orange;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 640.78861,584.48479 c 29.44231,36.37438 24.60786,52.53068 -24.24366,47.47717 -18.00684,29.1372 -33.78898,29.69126 -56.56855,2.0203 -41.59093,35.96751 -50.75599,-2.76991 -37.37564,-29.29442 38.92362,3.65691 77.94112,5.24851 118.18785,-20.20305 z"
+       id="path4241-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer15"
+     inkscape:label="left-eye"
+     style="display:inline">
+    <ellipse data-segment data-segment-alias="-eye" data-segment-color="black"
+       style="fill:black;fill-rule:evenodd;stroke:#000000;stroke-width:4.31244946;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4268"
+       cx="452.40634"
+       cy="198.00366"
+       rx="20.909914"
+       ry="26.355202" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="right-eye"
+     style="display:inline">
+    <ellipse data-segment data-segment-alias="-eye" data-segment-color="black"
+       style="fill:black;fill-rule:evenodd;stroke:#000000;stroke-width:4.31244946;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4268-8"
+       cx="561.64484"
+       cy="196.74098"
+       rx="20.909914"
+       ry="26.355202" />
+  </g>
+</svg>

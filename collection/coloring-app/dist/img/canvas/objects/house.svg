@@ -1,0 +1,69 @@
+<svg style="width: 100%; height: 100%;" viewBox="0 0 1024 720">
+  <g
+     inkscape:groupmode="layer"
+     id="layer26"
+     inkscape:label="roof"
+     style="display:inline;opacity:0.98999999">
+    <path data-segment data-segment-alias="roof" data-segment-color="red"
+       style="fill:red;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 157.5838,326.04051 512.14734,62.390694 868.73119,324.0202 841.45707,350.28417 513.15749,113.90847 184.85792,354.32478 Z"
+       id="path4598"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer27"
+     inkscape:label="facade"
+     style="display:inline">
+    <path data-segment data-segment-alias="facade" data-segment-color="pink"
+       style="opacity:1;fill:pink;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 206.07112,339.17248 2.0203,311.12699 605.08137,0 -1.01015,-319.2082 -296.98484,-217.1828 z"
+       id="path4602"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer28"
+     inkscape:label="door"
+     style="display:inline">
+    <path data-segment data-segment-alias="door" data-segment-color="brown"
+       style="fill:brown;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 447.49758,434.10652 -2.02031,216.17265 128.28938,0 1.01015,-217.1828 z"
+       id="path4606"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer29"
+     inkscape:label="door-knob"
+     style="display:inline">
+    <circle data-segment data-segment-alias="door-knob" data-segment-color="black"
+       style="fill:black;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4610"
+       cx="472.30725"
+       cy="551.80963"
+       r="15.657365" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer31"
+     inkscape:label="windows"
+     style="display:inline">
+    <path data-segment data-segment-alias="windows" data-segment-color="burlywood"
+       id="path4617"
+       style="fill:burlywood;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 329.30973,429.07607 1.01015,71.72083 m -61.61932,-89.90359 121.21831,0 0,106.06602 -121.21831,0 z"
+       inkscape:connector-curvature="0" />
+    <path data-segment data-segment-alias="windows" data-segment-color="burlywood"
+       id="path4617-6"
+       style="display:inline;fill:burlywood;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 695.99511,429.62177 1.01015,71.72083 m -61.61932,-89.90359 121.21831,0 0,106.06602 -121.21831,0 z"
+       inkscape:connector-curvature="0" />
+    <path data-segment data-segment-alias="windows" data-segment-color="burlywood"
+       id="path4617-7"
+       style="display:inline;fill:burlywood;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 511.1372,248.76385 1.01015,71.72083 m -61.61932,-89.90359 121.21831,0 0,106.06602 -121.21831,0 z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

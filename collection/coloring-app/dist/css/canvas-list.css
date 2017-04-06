@@ -1,0 +1,229 @@
+/*--
+ - Screen
+ --*/
+[data-screen="canvas-list"]{
+    background-color: transparent;
+}
+
+/*--
+ - Canvas list
+ --*/
+#canvas-list{
+    position: relative;
+    height: calc(100% - 50px);
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+#canvas-list .swiper-container{
+    height: 100%;
+}
+
+#canvas-list [data-canvas-level]{
+    background-color: rgba(0, 0, 0, 0.15);
+    height: calc(100% - 0px);
+    padding: 10px 60px;
+}
+
+/*- canvas tiles -*/
+.canvas-level-name{
+    display: table;
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-shadow: 0 1px 1px black;
+    font: 20px/100% 'ralewayregular', sans-serif;
+    padding: 0 5px;
+}
+
+.canvas-level-name > span{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.canvas-level-name > span:first-child{
+    text-transform: capitalize;
+}
+
+.canvas-level-name > span:last-child{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.canvas-tiles-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3px 0 32px;
+}
+
+.canvas-tiles-wrap .canvas-tiles{
+    position: relative;
+    width: calc( (100% / 3) - 10px );
+    height: calc( 50% - 10px );
+    float: left;
+    margin: 5px;
+}
+
+.canvas-tiles-wrap .canvas-tiles[disabled],
+.canvas-tiles-wrap .canvas-tiles[disabled="disabled"]{
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.canvas-tiles-wrap .canvas-tiles:nth-of-type(1){
+    width: calc( (100% / 1.5) - 10px );
+}
+
+.canvas-tiles-wrap .canvas-tiles:nth-of-type(3n){
+    clear: left;
+}
+
+/*- unlocked tiles stat -*/
+.tile-pri-specs{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tile-pri-specs > span{
+    display: block;
+}
+
+.tile-pri-specs > span.tps-name{
+    font: 28px/100% 'pacificoregular', sans-serif;
+    color: white;
+    text-shadow: 0 1px 2px #333;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 100;
+
+    width: calc(100% - 20px);
+    height: 40px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    margin: 0 auto;
+}
+
+.tile-pri-specs > span.tps-rating{
+    width: 62px;
+    margin: 10px auto 0;
+    
+    width: 62px;
+    margin: 10px auto 0;
+    color: white;
+    text-shadow: 0 1px 2px #333;
+}
+
+/*- locked tiles -*/
+.canvas-tiles-locked::after{
+    content: '\f023';
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    display: inline-block;
+    font: normal normal normal 50px/100% 'FontAwesome';
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    color: white;
+    text-rendering: auto;
+    text-shadow: 0 1px 3px gray;
+}
+
+/*-- canvas color-coded level --*/
+[data-canvas-level="beginner"] .canvas-tiles-wrap .canvas-tiles{
+    background-color: #ffd800;
+}
+
+[data-canvas-level="intermmediate"] .canvas-tiles-wrap .canvas-tiles{
+    background-color: #BFFF42;
+}
+
+[data-canvas-level="advanced"] .canvas-tiles-wrap .canvas-tiles{
+    background-color: #f75656;
+}
+
+[data-canvas-level="expert"] .canvas-tiles-wrap .canvas-tiles{
+    background-color: #59E3EF;
+}
+
+/*--
+ - Swiper class override
+ --*/
+
+/*- custom swiper pagination bullets -*/
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 7px;
+}
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: white;
+    opacity: 0.4;
+    box-shadow: 0 3px 3px #333;
+}
+
+.swiper-pagination-bullet-active{
+    background: white;
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, 
+.swiper-pagination-custom,
+.swiper-pagination-fraction{
+    bottom: 3px;
+}
+
+/*- custom swiper navigation control [prev & next] -*/
+.btn-level-prev,
+.btn-level-next{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    color: white;
+    text-shadow: 0 2px 5px #333;
+}
+
+.btn-level-prev:active,
+.btn-level-next:active{
+    -webkit-transform: translateY(-50%) scale(0.8);
+    transform: translateY(-50%) scale(0.8);
+}
+
+.swiper-button-disabled{
+    opacity: 0;
+    -webkit-visibility: hidden;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.btn-level-prev{
+    left: 0;
+}
+
+.btn-level-next{
+    right: 0;
+}

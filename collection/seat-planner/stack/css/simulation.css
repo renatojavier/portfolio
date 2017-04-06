@@ -1,0 +1,438 @@
+/*-- page name navbar prop --*/
+[data-page="simulation"] [data-dom="class-name"]{
+    font-family: 'latolight';
+    padding-right: 16px;
+    font-size: 15px !important;
+}
+
+[data-page="simulation"] [data-dom="class-size"]{
+    min-width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 3px 2px;
+}
+
+[data-page="simulation"] [data-dom="class-size-data"]{
+    font: 14px/100% 'latoregular';
+    min-width: 17px;
+    display: inline-block;
+}
+
+/*--
+ - Picker toolbar left text
+ --*/
+.picker-modal .left label{
+    font: 14px/100% 'latolight' !important;
+    padding: 0 16px !important;
+}
+
+/*--
+ - Controls and views
+ --*/
+
+/*-- controls --*/
+[data-page="simulation"] [data-size-control="label"],
+[data-page="simulation"] [data-active-control="label"]{
+    font: 15px/100% 'latolight';
+}
+
+/*--
+ - Page content
+ --*/
+[data-page="simulation"] .page-content{
+    background-color: #f5f5f5;
+}
+
+[data-page="simulation"] #canvas-simulators{
+    position: relative;
+    height: 100%;
+    background-color: white;
+}
+
+[data-page="simulation"] [data-dom="tile-container"]{
+    position: relative;
+    height: calc(100% - 40px);
+    overflow: hidden;
+}
+
+[data-page="simulation"] [data-dom="tile-screen-organizer"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+[data-page="simulation"] [data-dom="tile-container"]:after{
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    width: 1px;
+    height: calc(100% + 7px);
+
+    background-color: #FFC107;
+
+    top: 0;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+[data-page="simulation"] [data-dom="tile-inner"]{
+    position: absolute;
+    width: calc(100% - 20px) !important;
+    /*- height: 100% !important; -*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    opacity: 0;
+    -webkit-visibility: hidden;
+    visibility: hidden;
+}
+
+/*-- tiles --*/
+[data-page="simulation"] [data-dom="tile"]{
+    position: relative;
+    float: left;
+    width: calc(100% / 10);
+    height: 60px;
+    padding: 0 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[data-page="simulation"] [data-dom="tile-data"]{
+    background-color: #9E9E9E;
+    text-align: center;
+    height: calc(100% - 6px);
+    padding: 4px;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+[data-page="simulation"] [data-dom="tile-inner"] [data-block-position="left"] [data-dom="tile-data"]{
+    background-color: #aaccee;
+}
+
+[data-page="simulation"] [data-dom="tile-inner"] [data-block-position="right"] [data-dom="tile-data"]{
+    background-color: pink;
+}
+
+/*-- tile dragging and dropping interaction --*/
+.packery-drop-placeholder{
+    outline: 2px dashed #444;
+    outline-offset: -6px;
+
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+/*-- origin --*/
+[data-page="simulation"] [data-dom="origin"]{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 5px;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #FFC107;
+    border-radius: 100%;
+
+    text-align: center;
+    line-height: 30px;
+    z-index: 1000;
+}
+
+/*-- tile data contents --*/
+[data-page="simulation"] [data-student-firstname]
+[data-page="simulation"] [data-student-lastname],
+[data-page="simulation"] [data-student-gender]{
+    display: block;
+}
+
+[data-page="simulation"] [data-student-firstname],
+[data-page="simulation"] [data-student-lastname]{
+    text-align: center;
+    display: block;
+    color: white;
+    font: 14px/100% 'latolight';
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+[data-page="simulation"] [data-student-lastname]{
+    margin-top: 18px;
+}
+
+[data-page="simulation"] [data-student-offset],
+[data-page="simulation"] [data-student-gender]{
+    position: absolute;
+    top: 4px;
+    left: 50%;
+
+    font-size: 16px;
+    color: #555;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+[data-page="simulation"] [data-student-offset]{
+    color: white;
+    display: block;
+    background-color: #777;
+    border-radius: 100%;
+    font: 11px/15px 'latolight';
+    width: 20px;
+    height: 15px;
+}
+
+/*--
+ - Display specs
+ --*/
+[data-page="simulation"] [data-dom-disp="main-wrapper"]{
+    position: fixed;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 33px;
+}
+
+/*-- sorting specs --*/
+[data-page="simulation"] [data-dom-disp="sorting-wrapper"]{
+    position: relative;
+    width: 50%;
+    padding: 0 16px;
+    margin-top: 1px;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font: 13px/100% 'latoregular';
+    float: left;
+}
+
+[data-page="simulation"] [data-dom-disp="sorting-mode"]{
+    margin-bottom: 3px;
+}
+
+[data-page="simulation"] [data-dom-disp="sorting-mode"] label,
+[data-page="simulation"] [data-dom-disp="sorting-type"] label{
+    width: 45px;
+
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+
+    margin-right: 5px;
+    padding: 1px 0;
+    border-radius: 3px;
+}
+
+[data-page="simulation"] [data-dom-disp="sorting-mode"] span,
+[data-page="simulation"] [data-dom-disp="sorting-type"] span{
+    color: #0AC2D2;
+}
+
+[data-page="simulation"] [data-dom-disp="sorting-mode"] label,
+[data-page="simulation"] [data-dom-disp="sorting-type"] label,
+[data-page="simulation"] [data-dom-disp="sorting-mode"] span,
+[data-page="simulation"] [data-dom-disp="sorting-type"] span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*-- 
+ - Addon display
+ --*/
+[data-page="simulation"] [data-dom-disp="addon-wrapper"]{
+    display: none;
+    position: relative;
+    width: 50%;
+    padding: 0 16px;
+    margin-top: 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 13px/100% 'latoregular';
+    float: left;
+}
+
+[data-page="simulation"] [data-dom-disp="addon-column"]{
+    text-align: right;
+}
+
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(1){
+    margin-bottom: 3px;
+}
+
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(1) label,
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(2) label{
+    width: 45px;
+
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+
+    margin-right: 5px;
+    padding: 1px 0;
+    border-radius: 3px;
+}
+
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(1) span,
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(2) span{
+    color: #0AC2D2;
+    min-width: 17px;
+}
+
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(1) label,
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(2) label,
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(1) span,
+[data-page="simulation"] [data-dom-disp="addon-column"]:nth-of-type(2) span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*-- 
+ - Special blocks or columns
+ --*/
+[data-page="simulation"] [data-dom="tile-left-block"],
+[data-page="simulation"] [data-dom="tile-right-block"]{
+    position: absolute;
+    width: calc(100% / 2) !important;
+    /*- height: 100% !important; -*/
+    bottom: 0;
+    left: 0;
+
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[data-page="simulation"] [data-dom="tile-right-block"]{
+    left: 50%;
+}
+
+[data-page="simulation"] [data-dom="tile-left-block"] [data-dom="tile"],
+[data-page="simulation"] [data-dom="tile-right-block"] [data-dom="tile"]{
+    width: calc(100% / 5) !important;
+}
+
+[data-page="simulation"] [data-gender-alias="male"] [data-dom="tile-data"]{
+    background-color: #aaccee;
+}
+
+[data-page="simulation"] [data-gender-alias="female"] [data-dom="tile-data"]{
+    background-color: pink;
+}
+
+/*--
+ - Overlay
+ --*/
+
+/*-- Student expanded --*/
+[data-page="simulation"] [data-student-expanded="container"]{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .picker-modal-inner{
+    overflow-y: auto;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .toolbar{
+    background-color: #0ac2d2;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .toolbar .left{
+    padding-left: 16px;
+    font: 15px/100% 'latolight';
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .card{
+    background-color: white;
+    width: 80%;
+    margin: 8px auto;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .card-footer .list-block{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] [data-student-expanded]{
+    font: 15px/100% 'latoregular';
+}
+
+[data-page="simulation"] [data-student-expanded="container"] [data-student-expanded="student-name"]{
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] [data-student-expanded="student-name"] .fa{
+    color: #FFC107;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] [data-student-expanded="attendance"]{
+    color: #F44336;
+    text-transform: uppercase;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] [data-student-expanded="gender"]{
+    text-transform: capitalize;
+}
+
+[data-page="simulation"] [data-student-expanded="container"] .card + .list-block{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-- Attendance --*/
+[data-page="simulation"] [data-dom="tile"] [data-student-selection="multiple"]{
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    color: #2B2B2B;
+    font-size: 20px;
+    display: none;
+}
+
+[data-page="simulation"] [data-tile-mode="attendance"] [data-student-selection="multiple"]{
+    display: block;
+}
+
+[data-page="simulation"] [data-sub-attendance="absent"]{
+    font: 15px/100% 'latolight';
+    background-color: rgba(0,0,0,0.3);
+    
+    opacity: 0;
+    -webkit-visibility: hidden;
+    visibility: hidden;
+}
+
+[data-page="simulation"] [data-absent] [data-dom="tile-data"]{
+    background-color: #ccc !important;
+}

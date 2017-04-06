@@ -1,0 +1,96 @@
+<div data-page="student-update" class="page navbar-fixed toolbar-fixed">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back icon-only" data-back-of="student-create">
+                    <i class="fa fa-fw fa-arrow-left"></i>
+                </a>
+                <p>Update student</p>
+            </div><!--/.left-->
+
+            <div class="center"></div><!--/.center-->
+            <div class="right"><span data-dom="class-name"></span></div><!--/.right-->
+        </div><!--/.navbar-inner-->
+    </div><!--/.navbar-->
+
+    <div class="page-content">
+        <div id="student-form-wrap">
+            <div class="list-block student-form-inner">
+                <ul>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="label">Student ID</div>
+                            <div class="item-input">
+                                <input data-field="student-id" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="label">First name</div>
+                            <div class="item-input">
+                                <input data-field="first-name" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="label">Middle name</div>
+                            <div class="item-input">
+                                <input data-field="middle-name" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="label">Last name</div>
+                            <div class="item-input">
+                                <input data-field="last-name" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="label">Gender</div>
+
+                            <ul class="gender-field-ul">
+                                <li>
+                                    <label class="label-radio item-content">
+                                        <!-- Checked by default -->
+                                        <input data-field="gender" type="radio" name="gender-field" value="male" checked>
+                                        <div class="item-media">
+                                            <i class="icon icon-form-radio"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title gender-field-option-label">Male</div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label-radio item-content">
+                                        <input data-field="gender" type="radio" name="gender-field" value="female">
+                                        <div class="item-media">
+                                            <i class="icon icon-form-radio"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title gender-field-option-label">Female</div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <a data-update-button="list" href="#" class="button button-fill button-raised user-form-anim-prop">
+                    <i class="fa fa-fw fa-pencil"></i>&nbsp;Update
+                </a>
+            </div>
+        </div>
+    </div><!--/.page-content-->
+
+</div>
