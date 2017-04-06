@@ -55,7 +55,7 @@ define(function( require ){
 					min = 4.2;
 					ua = window.navigator.userAgent;
 
-					if( parseFloat( ua.match(/Android\s+([\d\.]+)/)[1] ) < min ){
+					if( false ){ //parseFloat( ua.match(/Android\s+([\d\.]+)/)[1] ) < min ){
 						app.config.preload.failed({
 							notice : 'Android OS version is not supported. KitKat 4.4+ required.'
 						});

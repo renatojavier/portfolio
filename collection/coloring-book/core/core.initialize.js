@@ -135,7 +135,7 @@ require( ['require.domReady'], function(domReady){
                             d : 0.899, // 1.5 * (18/30)
                             f : function(){
                                 
-                                if( parseFloat( ua.match(/Android\s+([\d\.]+)/)[1] ) >= 4.4 || true){ /*- passed sys android ver -*/
+                                if( true ) { //parseFloat( ua.match(/Android\s+([\d\.]+)/)[1] ) >= 4.4 || true){ /*- passed sys android ver -*/
                                     //*--> update node #2
                                     self.updateProgress({
                                         s : 30, 

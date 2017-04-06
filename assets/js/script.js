@@ -18,11 +18,9 @@ window.app = {
 				prefetch: true,
 				cacheLength: 2,
 					onStart: {
-					duration: 250, // Duration of our animation
+					duration: 250,
 					render: function ($container) {
-						// Add your CSS animation reversing class
 						$container.addClass('is-exiting');
-						// Restart your animation
 						smoothState.restartCSSAnimations();
 					}
 				},
@@ -49,6 +47,7 @@ window.app = {
 
 		grid.isotope({
 			itemSelector: '.portfolio-item',
+			stagger: 30,
   			masonry: {
 				columnWidth: '.portfolio-item'
 			}
@@ -72,7 +71,7 @@ window.app = {
 	},
 
 	stickyNavigation : function(){
-		$('#sticky-nav').scrollToFixed();
+		$('#sticky-nav').sticky({ topSpacing: 0 });
 	},
 
 	updateCount : function(){
@@ -81,12 +80,12 @@ window.app = {
 	},
 
 	slidingNavigation : function(){
+		return;
 		 var swiper = new Swiper('.swiper-container', {
-	        pagination: '.swiper-pagination',
-	        slidesPerView: 3,
-	        paginationClickable: true,
-	        spaceBetween: 30,
-	        freeMode: true
+	        slidesPerView: 2,
+	        freeMode: false,
+	        preventClicksPropagation: true,
+	        preventClicks: true
 	    });
 	}
 

@@ -67,6 +67,10 @@
     background-image: url(../img/assets/buttons/instructions.png);
 }
 
+[data-page="index"] nav#menu a[data-menu-alias="about"]{
+    background-image: url(../img/assets/buttons/about.png);
+}
+
 [data-page="index"] nav#menu a[data-menu-alias="exit"]{
     background-image: url(../img/assets/buttons/exit.png);
 }

@@ -2,6 +2,11 @@ html{
 	overflow-x: hidden;
 }
 
+*{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
     font-size: 0.75em;
     background-color: #222;
@@ -26,9 +31,7 @@ a:active,
 a:focus {
     color: #222;
 }
-a:visited {
-    color: #673ab7;
-}
+
 code {
     font-weight: bold;
 }
@@ -301,16 +304,16 @@ code {
 
 /*-- portfolio item --*/
 .grid{
-	padding: 10px 0;
+	padding: 10px 0 45px;
 }
 
 .portfolio-item{
 	float: left;
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3 - 20px);
     box-sizing: border-box;
     padding: 15px;
     background-color: white;
-    margin: 5px 5px;
+    margin: 10px 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.14);
     border-radius: 3px;
     overflow: hidden;
@@ -326,6 +329,11 @@ code {
     margin-left: -15px;
     margin-right: -74px;
     display: block;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .portfolio-item [data-item="title"]{
@@ -349,6 +357,12 @@ code {
     font-size: 14px;
     line-height: 100%;
     margin-top: 10px;
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
 }
 
 .portfolio-item [data-item="subtitle"]{
@@ -374,6 +388,65 @@ code {
 	background-color: rgba(255, 152, 0, 0.15);
 }
 
+/*-- banner --*/
+#banner{
+	background-color: white;
+    padding: 50px 0 100px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+#banner h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#banner h2:nth-of-type(1){
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+#banner h2:nth-of-type(2){
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#banner h2:nth-of-type(3){
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    letter-spacing: -2px;
+}
+
+#banner h2:nth-of-type(4){
+	font-size: 30px;
+}
+
+#banner .fa-chevron-right:first-of-type{
+    margin-right: -20px;
+    margin-left: -10px;
+}
+
+#banner .btn-send-request{
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid;
+    max-width: 220px;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+#sticky-nav-sticky-wrapper{
+    z-index: 99999;
+    position: relative;
+}
+
+.topbar .mobile-mail{
+	display: none;
+}
+
 /*-- scrollbar ui --*/
 ::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -389,3 +462,133 @@ code {
 	background-color: #444;
 	border: 2px solid #555555;
 }
+
+/*-- laptop --*/
+@media ( max-width: 1024px ){
+	.inner{
+		width: calc(100% - 40px);
+	}
+
+	.m-header{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	/*-- sticky nav --*/
+	#sticky-nav{
+		overflow: hidden;
+	}
+
+	.swiper-container{
+		height: 74px;
+	    overflow-x: auto;
+	}
+
+	.swiper-wrapper{
+		width: calc( (160px) * 7 );
+	}
+
+	#sticky-nav [data-filter]{
+		padding: 10px 15px;
+	    font-size: 15px;
+	}
+
+}
+
+@media ( max-width: 768px ){
+	/*-- grid --*/
+	.portfolio-item{
+		width: calc(50% - 20px);
+	}
+
+}
+
+@media (max-width: 560px){
+	/*-- grid --*/
+	.portfolio-item{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.swiper-container{
+		height: 58px;
+	}
+}
+
+/*-- mobile --*/
+@media (max-width: 425px){
+	.inner{
+		width: calc(100% - 20px);
+	}
+
+	/*-- top bar --*/
+	.topbar{
+		height: 40px;
+	}
+
+	.topbar .call-to-action{
+		display: none;
+	}
+
+	.topbar .mobile-mail,
+	.topbar #overlay-menu{
+	    display: inline-block;
+	    vertical-align: middle;
+	    float: none !important;
+	    clear: both;
+	    color: white;
+	    line-height: 40px;
+	    font-size: 20px;
+	    width: 50px;
+	    text-align: center;
+	}
+
+	.topbar #overlay-menu{
+	    background-color: #0077b5;
+    	margin-left: -3px;
+	}
+
+	.topbar .mobile-mail{
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+
+	.m-header{
+		padding: 0;
+	}
+
+	.m-type-sub-heading-1{
+    	margin-top: -20px;
+	}
+
+	/*-- section header --*/
+	.section-header{
+		font-size: 16px;
+	    margin-top: 25px;
+    	margin-bottom: 5px;
+	}
+
+	/*-- grid --*/
+	.portfolio-item{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/*-- banner --*/
+	#banner .btn-send-request{
+		font-size: 20px;
+	}
+
+	/*-- footer --*/
+	.footer{
+	    text-align: center;
+	}
+
+}
+
+/*--
+ - Explore
+ --*/
+
+/*-- athena travel --*/
