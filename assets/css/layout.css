@@ -521,6 +521,14 @@ code {
 
 }
 
+@media ( min-width: 769px ){
+	#overlay-menu{
+		background-color: #0077b5;
+		width: 50px;
+		text-align: center;
+	}
+}
+
 @media ( max-width: 768px ){
 	/*-- grid --*/
 	.portfolio-item{
