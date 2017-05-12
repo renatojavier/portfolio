@@ -1,7 +1,6 @@
 window.app = {
 	initialize : function(){
 		var _ = null;
-
 		this.updateCount();
 		this.router();
 		this.stickyNavigation();
