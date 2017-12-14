@@ -266,7 +266,7 @@ window.hero = window.hero || new Object;
                             
                             (typeof frcb === 'function') ? frcb():null;
                          },
-                        error(x,y){
+                        error: function(x,y){
                             $('#tp-data').html('We have encountered an error while loading contents. Please try again.');
                          }
                      });
